@@ -1,14 +1,17 @@
 import React from 'react';
 import './App.css';
-import NavBar from './components/NavBar';
-import Nav from './components/Nav';
-import Home from './components/Home';
+import SignUp from './pages/SignUp';
+import LogIn from './pages/LogIn';
+import Home from './pages/Home';
+import GetInTouch from './pages/GetInTouch';
 
 function App() {
   return (
     <>
-      <NavBar />
-      <Home />
+      {/* <NavBar /> */}
+      {/* <Home /> */}
+      {/* <LogIn /> */}
+      <GetInTouch />
     </>
   );
 }
