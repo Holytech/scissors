@@ -1,4 +1,5 @@
-import React from 'react';
+import '../assets/css/style.css';
+
 import { FaTwitter } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
@@ -8,9 +9,9 @@ import logo from '../assets/img/Logo_black.png';
 function Footer() {
   return (
     <>
-      <div className="px-36 py-7 bg-slate-300">
-        <div className="grid grid-cols-5 md:gap-[4vw] mb-5 md:mb-0 w-full items-start">
-          <div>
+      <div className="px-36 py-12 footer">
+        <div className="grid grid-cols-5 mb-4 md:mb-0 w-full items-start">
+          <div className='row-span-2 '>
             <img src={logo} alt="Scissor's Logo" className="h-10" />
             <div className="flex gap-5 text-2xl mt-5">
               <FaTwitter className=" cursor-pointer hover:text-blue-600" />
