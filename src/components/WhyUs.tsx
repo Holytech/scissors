@@ -5,7 +5,7 @@ import data_analytics from "../assets/img/data_analytics.png";
 
 const WhyUs = () => {
   return (
-    <div className='w-full'>
+    <div className='w-full' id="why">
         <div className='bg-[#F9FBFD] flex flex-row justify-between py-12 px-36'>
             <div>
                 <h1 className='text-3xl font-bold'>One Stop. <br />Four <span className='text-[#005AE2]'>Possibilities.</span> </h1>

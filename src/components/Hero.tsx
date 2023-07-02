@@ -1,8 +1,9 @@
 import '../assets/css/style.css';
+import {Link} from "react-router-dom"
 
 const Hero = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center py-44 hero">
+    <div className="w-full flex flex-col justify-center items-center py-44 hero" id='hero'>
       <div className="">
         <h1 className="text-center text-[48px] font-semibold">
           Optimize Your Online Experience with Our
@@ -22,9 +23,9 @@ const Hero = () => {
         </p>
       </div>
       <div className="w-[20%] mt-20 flex justify-between">
-        <button className="rounded-full bg-[#005AE2] text-white text-xl font-semibold py-1 px-6">
+        <Link to="/signup" className="rounded-full bg-[#005AE2] text-white text-xl font-semibold py-1 px-6">
           Sign Up
-        </button>
+        </Link>
         <button className="rounded-full bg-none text-[#005AE2] text-xl font-semibold hover:border hover:border-[#005AE2] py-1 px-6">
           Learn More
         </button>

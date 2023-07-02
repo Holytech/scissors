@@ -3,7 +3,7 @@ import { Accordion } from 'flowbite-react';
 
 const FAQ = () => {
   return (
-    <div className="py-12 px-28">
+    <div className="py-12 px-28" id='faq'>
       <Accordion collapseAll>
         <Accordion.Panel>
           <Accordion.Title>What is Flowbite?</Accordion.Title>

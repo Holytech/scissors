@@ -1,16 +1,19 @@
-import React from 'react';
+import {Link} from "react-router-dom"
+
+import apple_icon from '../assets/img/apple-icon.png';
+import google_icon from '../assets/img/google-icon.png';
 import Footer from '../components/Footer';
 
 const SignUp = () => {
   return (
     <>
-      <div className="2xl:container h-screen m-auto">
-        <div
+      <div className="2xl:container h-auto m-auto">
+        {/* <div
           hidden
           role="hidden"
-          className="fixed inset-0 w-6/12 ml-auto bg-white bg-opacity-70 backdrop-blur-xl lg:block"
-        ></div>
-        <div className="relative h-full ml-auto lg:w-6/12">
+          className="fixed inset-0 bg-white bg-opacity-70 backdrop-blur-xl lg:block"
+        ></div> */}
+        <div className="relative h-full mx-auto lg:w-6/12">
           <div className="m-auto py-12 px-6 sm:p-20 xl:w-10/12">
             <div className="space-y-4">
               <p className="font-medium text-lg text-gray-600 text-center">
@@ -22,7 +25,7 @@ const SignUp = () => {
               <button className="py-3 px-6 rounded-xl bg-[#005AE2]  hover:bg-blue-100 focus:bg-blue-100 active:bg-blue-200">
                 <div className="flex gap-4 justify-center">
                   <img
-                    src="./src/assets/images/google-icon.png"
+                    src={google_icon}
                     className="w-5"
                     alt=""
                   />
@@ -35,8 +38,8 @@ const SignUp = () => {
               <button className="py-3 px-6 rounded-xl bg-[#005AE2] transition hover:bg-gray-800 active:bg-gray-600 focus:bg-gray-700">
                 <div className="flex gap-4 items-center justify-center text-white">
                   <img
-                    src="./src/assets/images/apple-icon.png"
-                    alt="Image"
+                    src={apple_icon}
+                    alt="apple's logo"
                     className="w-5"
                   />
 
@@ -92,12 +95,12 @@ const SignUp = () => {
                     Sign up with Email
                   </span>
                 </button>
-                <a href="#" type="reset" className="w-max p-3 -ml-3">
+                <p className="w-max p-3 -ml-3">
                   <span className="text-sm tracking-wide text-black-600 text-center">
                     Already have an account?{' '}
-                    <span className="text-[#005AE2]">Log in</span>
+                    <Link to="/login" className="text-[#005AE2]">Log in</Link>
                   </span>
-                </a>
+                </p>
                 <p className="text-center text-sm text-gray-400">
                   By signing in with an account, you agree to <br /> Scissors's
                   Terms of Service, Privacy Policy and Acceptable Use Policy

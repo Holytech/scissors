@@ -1,4 +1,5 @@
-import React from 'react';
+import {Link} from "react-router-dom"
+
 import apple_icon from '../assets/img/apple-icon.png';
 import google_icon from '../assets/img/google-icon.png';
 import Footer from '../components/Footer';
@@ -74,12 +75,12 @@ const LogIn = () => {
                     Log in
                   </span>
                 </button>
-                <a href="#" type="reset" className="w-max p-3 -ml-3">
+                <p className="w-max p-3 -ml-3">
                   <span className="text-sm tracking-wide text-black-600 text-center">
                     Don't have an account ? &nbsp;
-                    <span className="text-[#005AE2]">Sign up</span>
+                    <Link to="/signup" className="text-[#005AE2]">Sign up</Link>
                   </span>
-                </a>
+                </p>
                 <p className="text-center text-sm text-gray-400 mt-4 w-">
                   By signing in with an account, you agree to <br />
                   Scissors's

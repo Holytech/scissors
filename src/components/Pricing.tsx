@@ -2,7 +2,7 @@ import CheckedCircle from '../assets/vectors/CheckedCircle';
 import CheckedCircleLight from '../assets/vectors/CheckedCircleLight';
 const Pricing = () => {
   return (
-    <div className="w-full py-12 px-36">
+    <div className="w-full py-12 px-36" id='pricing'>
       <div className="mx-auto text-center">
         <h1 className="text-3xl font-bold mb-2">
           A <span className="text-[#005AE2]">price perfect</span> for your

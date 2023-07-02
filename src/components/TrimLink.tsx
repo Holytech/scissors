@@ -2,7 +2,7 @@ import React from 'react'
 
 const TrimLink = () => {
   return (
-    <div className='flex justify-center items-center py-24 trim'>
+    <div className='flex justify-center items-center py-24 trim' id='trim'>
         <form className='bg-white rounded-lg w-1/2 p-16'>
             <input type="text" className=' text-[#005AE2] p-5 rounded-xl border border-[#005AE2] w-full' placeholder='Paste URL here...' />
             <div className='flex flex- justify-between mt-8'>

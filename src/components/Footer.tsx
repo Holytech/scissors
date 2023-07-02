@@ -1,4 +1,5 @@
 import '../assets/css/style.css';
+import {Link} from "react-router-dom"
 
 import { FaTwitter } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
@@ -6,13 +7,14 @@ import { FaLinkedin } from 'react-icons/fa';
 import { FaFacebook } from 'react-icons/fa';
 import logo from '../assets/img/Logo_black.png';
 
+
 function Footer() {
   return (
     <>
       <div className="px-36 py-12 footer">
         <div className="grid grid-cols-5 mb-4 md:mb-0 w-full items-start">
           <div className='row-span-2 '>
-            <img src={logo} alt="Scissor's Logo" className="h-10" />
+            <Link to="/"><img src={logo} alt="Scissor's Logo" className="h-10" /></Link>
             <div className="flex gap-5 text-2xl mt-5">
               <FaTwitter className=" cursor-pointer hover:text-blue-600" />
               <FaInstagram className=" cursor-pointer hover:text-blue-600" />
