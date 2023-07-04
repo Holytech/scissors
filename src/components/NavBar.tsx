@@ -55,13 +55,9 @@ function NavBar() {
                 Log In
               </Link>
 
-              <button className="rounded-full text-[#005AE2] bg-white px-3 py-1 text-md border border-[#005AE2] hover:bg-[#005AE2] hover:text-white ">
+              <Link to="/signup" className="rounded-full text-[#005AE2] bg-white px-3 py-1 text-md border border-[#005AE2] hover:bg-[#005AE2] hover:text-white ">
                 Try for free
-              </button>
-
-              <button className="rounded-full text-white bg-[#005AE2] px-3 py-1 text-md border border-[#005AE2] hover:bg-white hover:text-[#005AE2]">
-                Try for free
-              </button>
+              </Link>
             </div>
           </div>
           {isMenuOpen ? (

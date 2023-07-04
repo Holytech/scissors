@@ -41,7 +41,7 @@ const LogIn = () => {
               </button>
             </div>
 
-            <div role="hidden" className="mt-8 border-t">
+            <div className="mt-8 border-t">
               <span className="block w-max mx-auto -mt-3 px-4 text-center text-gray-500 bg-white">
                 Or
               </span>
